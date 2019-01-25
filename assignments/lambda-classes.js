@@ -20,14 +20,13 @@ class Instructor extends Person {
         this.favLanguage = instrAttributes.favLanguage;
         this.catchPhrase = instrAttributes.catchPhrase;
     }
-    demo(subject) {
-        return (`Today we are learning about ${subject}.`);
+    demo() {
+        return (`Today we are learning about ${this.favLanguage}.`);
     }
     grade(subject) {
         return (`${this.name} receives a perfect score on ${subject}!`);
     }
 }
-const test = new Instructor (this, "Javascript");
 
 class Student extends Instructor {
     constructor(studAttributes) {
